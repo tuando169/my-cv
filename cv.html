@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Đỗ Đăng Tuân</title>
+<meta name="version" content="1.0.0">
+<meta name="build-date" content="2026-10-25">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+  @page { size: A4; margin: 11mm 12mm 10mm; }
+
+  :root {
+    --ink: #101418;
+    --muted: #4f5660;
+    --line: #c9cdd3;
+    --line-dark: #11161c;
+    --accent: #1e46d6;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: #fff;
+    color: var(--ink);
+    font-family: "Be Vietnam Pro", Arial, sans-serif;
+    font-size: 9.4pt;
+    line-height: 1.43;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, h4, p, ul { margin: 0; }
+  ul { padding: 0; list-style: none; }
+
+  .page { width: 100%; }
+
+  /* ---------- Header ---------- */
+  .cv-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8mm;
+    align-items: start;
+    padding-bottom: 3.2mm;
+    border-bottom: 2.2px solid var(--line-dark);
+  }
+  .cv-name {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 25pt;
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+  .cv-role {
+    margin-top: 1.6mm;
+    color: var(--accent);
+    font-size: 11pt;
+    font-weight: 700;
+  }
+  .cv-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4mm 4mm;
+    margin-top: 3mm;
+    color: var(--muted);
+    font-size: 9.1pt;
+  }
+  .cv-contact b { color: var(--ink); font-weight: 600; }
+  .cv-photo {
+    width: 25mm;
+    height: 33.5mm;
+    object-fit: cover;
+    object-position: center 22%;
+    border-radius: 2mm;
+    filter: saturate(0.92);
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 4.3mm; }
+  .cv-section-title {
+    display: flex;
+    align-items: center;
+    gap: 2.5mm;
+    padding-bottom: 1.2mm;
+    margin-bottom: 2.4mm;
+    border-bottom: 1px solid var(--line-dark);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9.2pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .cv-section-title::before {
+    content: "";
+    width: 2.4mm;
+    height: 2.4mm;
+    border-radius: 0.5mm;
+    background: var(--accent);
+  }
+
+  .summary { color: #2f353d; font-size: 10pt; line-height: 1.58; }
+  .summary + .summary { margin-top: 1.6mm; }
+  .summary strong { color: var(--ink); }
+
+  /* ---------- Skills ---------- */
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8mm;
+    row-gap: 1.8mm;
+  }
+  .skill-row {
+    display: grid;
+    grid-template-columns: 30mm minmax(0, 1fr);
+    gap: 2.5mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 0.6px solid var(--line);
+    break-inside: avoid;
+  }
+  .skill-row dt {
+    color: var(--ink);
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  .skill-row dd { color: var(--muted); font-size: 8.9pt; }
+
+  /* ---------- Experience / projects ---------- */
+  .role { break-inside: auto; }
+  .role + .role { margin-top: 4.2mm; }
+  .role-head { break-after: avoid; }
+  .role-sub { break-inside: avoid; }
+  .role-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4mm;
+    align-items: baseline;
+  }
+  .role-company { font-size: 11.4pt; font-weight: 700; letter-spacing: -0.01em; }
+  .role-title { color: var(--accent); font-size: 9.7pt; font-weight: 700; }
+  .role-date { color: var(--muted); font-family: "IBM Plex Mono", monospace; font-size: 8.6pt; white-space: nowrap; }
+  .role-sub {
+    margin-top: 2.2mm;
+    padding: 2.2mm 3mm;
+    border-left: 1.2mm solid var(--accent);
+    background: #f2f4fb;
+    break-inside: avoid;
+  }
+  .role-sub h4 { font-size: 9.8pt; font-weight: 700; }
+  .role-sub p { margin-top: 1mm; color: var(--muted); font-size: 9pt; }
+  .role-sub .tech { margin-top: 1.4mm; color: #2f353d; font-size: 8.7pt; }
+  .role-sub .link { color: var(--accent); font-weight: 600; }
+
+  .bullets { margin-top: 1.5mm; }
+  .bullets li {
+    position: relative;
+    padding-left: 4.2mm;
+    margin-top: 0.95mm;
+    color: #2f353d;
+    font-size: 9pt;
+    line-height: 1.43;
+    break-inside: avoid;
+  }
+  .bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0.6mm;
+    top: 1.75mm;
+    width: 1.5mm;
+    height: 1.5mm;
+    border: 0.5mm solid var(--accent);
+    border-radius: 50%;
+  }
+  .bullets strong { color: var(--ink); }
+
+  .project-block { margin-top: 3.4mm; break-inside: avoid; }
+  .project-block:first-of-type { margin-top: 0; }
+  .project-title { font-size: 10.6pt; font-weight: 700; }
+  .project-meta { color: var(--muted); font-size: 8.8pt; }
+  .project-links { margin-top: 1mm; color: var(--accent); font-size: 8.6pt; font-weight: 600; }
+
+  /* ---------- Two-column footer sections ---------- */
+  .cv-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8mm;
+    align-items: start;
+  }
+  .cv-columns > section { margin-top: 0; }
+  .entry { break-inside: avoid; }
+  .entry + .entry { margin-top: 2.4mm; }
+  .entry-title { font-size: 9.8pt; font-weight: 700; }
+  .entry-meta { color: var(--muted); font-size: 8.8pt; }
+  .entry p { margin-top: 0.6mm; color: #2f353d; font-size: 9pt; }
+
+  .note {
+    margin-top: 4.5mm;
+    padding-top: 2mm;
+    border-top: 0.6px solid var(--line);
+    color: #6b7280;
+    font-size: 8pt;
+    text-align: center;
+  }
+
+  @media screen {
+    body { background: #e9e9ec; padding: 10mm 0; }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 12mm 13mm 11mm;
+      background: #fff;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="cv-head">
+    <div>
+      <h1 class="cv-name">Đỗ Đăng Tuân</h1>
+      <p class="cv-role">Fullstack Developer · Vue / React / .NET</p>
+      <div class="cv-contact">
+        <span><b>Điện thoại:</b> 0966 135 609</span>
+        <span><b>Email:</b> tuandodang.work@gmail.com</span>
+        <span><b>Địa chỉ:</b> Triều Khúc, Thanh Trì, Hà Nội</span>
+        <span><b>Ngày sinh:</b> 16/09/2003</span>
+        <span><b>Giới tính:</b> Nam</span>
+      </div>
+    </div>
+    <img class="cv-photo" src="assets/portrait.jpg" alt="Ảnh chân dung Đỗ Đăng Tuân">
+  </header>
+
+  <section>
+    <h2 class="cv-section-title">Tóm tắt chuyên môn</h2>
+    <p class="summary">
+      Fullstack Developer với <strong>hơn 2 năm kinh nghiệm frontend (Vue 3, TypeScript, React)</strong> và
+      <strong>6 tháng backend (.NET Core, PostgreSQL, Doris)</strong>. Tập trung vào clean architecture,
+      tối ưu hiệu năng và xây dựng giao diện quản trị cho dữ liệu lớn.
+    </p>
+    <p class="summary">
+      Có kinh nghiệm dẫn dắt frontend trong team 4 người, phối hợp BA làm rõ yêu cầu, thiết kế giải pháp và
+      triển khai tính năng theo từng nghiệp vụ. Thành thạo tích hợp RESTful API, xác thực JWT và tối ưu
+      truy vấn cơ sở dữ liệu.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="cv-section-title">Kỹ năng</h2>
+    <dl class="skills">
+      <div class="skill-row"><dt>Ngôn ngữ</dt><dd>JavaScript (ES6+), TypeScript, HTML/CSS, C#</dd></div>
+      <div class="skill-row"><dt>Frontend</dt><dd>Vue 3, Composition API, Pinia, Vue Router, Vite, React, React Router, Redux, Tailwind CSS, Element Plus, Ant Design, AG Grid/Chart</dd></div>
+      <div class="skill-row"><dt>Backend</dt><dd>Node.js, ExpressJS, NestJS, ASP.NET Core, RESTful API, gRPC, JWT, Middleware</dd></div>
+      <div class="skill-row"><dt>Cơ sở dữ liệu</dt><dd>PostgreSQL, MySQL, MongoDB, Supabase, Doris, tối ưu SQL, indexing</dd></div>
+      <div class="skill-row"><dt>Kiến trúc &amp; hiệu năng</dt><dd>OOP, SOLID, Clean Architecture, State Management, Lazy Loading, Code Splitting, Tree Shaking, Minify/Compress</dd></div>
+      <div class="skill-row"><dt>Real-time &amp; công cụ</dt><dd>WebSocket, Server-Sent Events (SSE), Swagger, Postman, PayOS, Git/GitHub, SmartGit, Figma</dd></div>
+      <div class="skill-row"><dt>AI hỗ trợ</dt><dd>ChatGPT/Codex, Antigravity, Claude Code</dd></div>
+      <div class="skill-row"><dt>Ngoại ngữ</dt><dd>TOEIC 780 (2025)</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2 class="cv-section-title">Kinh nghiệm làm việc</h2>
+
+    <article class="role">
+      <div class="role-head">
+        <div>
+          <p class="role-company">GLOBAL PLAY STUDIO</p>
+          <p class="role-title">Fullstack Developer · Lead Frontend</p>
+        </div>
+        <p class="role-date">04/2024 — Nay</p>
+      </div>
+
+      <div class="role-sub">
+        <h4>GPlay Hub — Hệ thống quản trị nội bộ AIO (All-in-one ERP)</h4>
+        <p>Nền tảng quản trị doanh nghiệp tích hợp phục vụ quản lý dự án nội bộ, điều phối nguồn lực và tự động hoá phân tích dữ liệu quảng cáo tập trung. Quy mô team: 4 người (2 BE, 2 FE).</p>
+        <p class="tech"><b>Frontend:</b> Vite, Vue 3, TypeScript, Tailwind CSS, AG Grid, AG Chart, Element Plus, Pinia. <b>Backend:</b> C# (.NET), PostgreSQL, Doris, gRPC. Website: <span class="link">https://gplayhub.com</span></p>
+      </div>
+
+      <ul class="bullets">
+        <li><strong>Dẫn dắt 2 thành viên frontend:</strong> phối hợp BA phân tích, làm rõ yêu cầu, thiết kế giải pháp và chia nhỏ tính năng theo từng nghiệp vụ.</li>
+        <li>Xây dựng các phân hệ quản lý nhân sự, báo cáo &amp; chi phí dự án, quản lý công việc, ticket, bug tracking và dữ liệu quảng cáo (UA).</li>
+        <li>Thiết kế phân quyền theo Role; kiểm soát truy cập Page/Route. Hiện thực UI theo Figma, tối ưu bảng dữ liệu lớn với AG Grid, Element Plus và Tailwind CSS.</li>
+        <li>Thiết kế RESTful API theo Clean Architecture với C# (.NET); xây dựng Data Access Layer, tối ưu SQL query và indexing để giảm độ trễ.</li>
+        <li>Xây dựng xác thực &amp; phân quyền server-side (JWT, Middleware), validation, logging, xử lý lỗi tập trung và tài liệu Swagger; làm việc với PostgreSQL, Doris, gRPC để đảm bảo dữ liệu nhất quán.</li>
+      </ul>
+
+      <div class="role-sub">
+        <h4>GPlay Studio — Company Landing Page (hoàn thành trong 1 tuần)</h4>
+        <p>Vị trí: Frontend Developer · Team 1 người · Vite, React, TypeScript, Tailwind CSS · <span class="link">https://landing-page-demo-blue.vercel.app</span></p>
+        <p>Đảm nhiệm toàn bộ kiến trúc frontend, tối ưu tốc độ tải và responsive. Dùng AI hỗ trợ sinh giao diện/CSS, sau đó refactor thành hệ thống UI component độc lập theo clean architecture.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2 class="cv-section-title">Dự án</h2>
+
+    <article class="project-block">
+      <p class="project-title">VExpo — 3D Exhibition</p>
+      <p class="project-meta">09/2025 — 12/2025 · Fullstack Developer · Team 3 người (1 3D Dev, 1 Fullstack Dev, 1 AI Dev)</p>
+      <p class="project-meta"><b>Công nghệ:</b> React.js, Tailwind CSS, Express.js, Supabase, PayOS, Three.js, Python</p>
+      <p class="project-links">https://test-do-an.vercel.app · Video demo: https://drive.google.com/file/d/1wAc-a4cCOZ9nj1nXMOQ4rdUjirfh0ALI/view</p>
+      <ul class="bullets">
+        <li>Nền tảng triển lãm ảo trên web cho phép người dùng tự thiết kế, tùy biến và xuất bản không gian triển lãm 3D trực tiếp trên trình duyệt.</li>
+        <li>Triển khai phân quyền 4 vai trò Guest / User / Designer / Admin; kiểm soát truy cập Page/Route và tách giao diện theo vai trò.</li>
+        <li>Xây dựng RESTful API (CRUD) với Express.js, kết nối máy chủ AI bên ngoài; tích hợp PayOS, quản lý subscription và tự động hoá luồng giao dịch.</li>
+      </ul>
+    </article>
+
+    <article class="project-block">
+      <p class="project-title">VietDoodle Gallery — Client Web, VDG Admin &amp; Browser Extension</p>
+      <p class="project-meta">02/2024 — 04/2024 · Frontend Developer · Team 3 người (2 FE, 1 BE)</p>
+      <p class="project-meta"><b>Công nghệ:</b> Vue.js, React.js, Tailwind CSS, Express.js, MongoDB</p>
+      <p class="project-links">Client: https://viet-doodle-gallery.vercel.app · Admin: https://vdgadmin.vercel.app · Extension: Chrome Web Store</p>
+      <ul class="bullets">
+        <li>Chủ trì thiết kế kiến trúc và phát triển giao diện VDG Admin bằng Vue.js + Tailwind CSS, tối ưu luồng thao tác cho quản trị viên.</li>
+        <li>Xây dựng các phân hệ CRUD: kiểm duyệt và quản lý tác phẩm nghệ thuật số, quản lý người dùng, phân quyền truy cập và giám sát trạng thái hệ thống.</li>
+        <li>Tích hợp RESTful API Express.js / MongoDB, xác thực JWT, data table và bộ lọc tìm kiếm; tối ưu render, lazy loading ảnh và quản lý state tập trung.</li>
+        <li>Phối hợp với nhóm Client (React.js) và Browser Extension để đảm bảo tính nhất quán về dữ liệu và trải nghiệm trên toàn hệ sinh thái.</li>
+      </ul>
+    </article>
+  </section>
+
+  <div class="cv-columns">
+    <section>
+      <h2 class="cv-section-title">Học vấn</h2>
+      <div class="entry">
+        <p class="entry-title">Học viện Công nghệ Bưu chính Viễn thông (PTIT)</p>
+        <p class="entry-meta">2021 — 2026 · Bằng Khá</p>
+        <p>Chuyên ngành Phát triển ứng dụng — Ngành Công nghệ Đa phương tiện.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="cv-section-title">Chứng chỉ &amp; giải thưởng</h2>
+      <div class="entry">
+        <p class="entry-title">TOEIC 780</p>
+        <p class="entry-meta">2025</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Giải Ba — Cuộc thi khởi nghiệp VietFuture</p>
+        <p class="entry-meta">2024</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <h2 class="cv-section-title">Hoạt động</h2>
+    <div class="entry">
+      <p class="entry-title">CLB IT PTIT — Phó ban truyền thông</p>
+      <p class="entry-meta">2022 — 2023</p>
+      <p>Quản lý truyền thông, định hướng nội dung và hình ảnh nhận diện CLB; thiết kế banner, poster và đồng tổ chức sự kiện, cuộc thi lập trình cho sinh viên IT.</p>
+    </div>
+  </section>
+
+  <p class="note">CV cập nhật 10/2026 · <span class="cv-version" data-version>v1.0.0 · 2026-10-25</span> · Đỗ Đăng Tuân · tuandodang.work@gmail.com</p>
+</main>
+</body>
+</html>

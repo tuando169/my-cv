@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đỗ Đăng Tuân — Fullstack Developer (Vue / React / .NET)</title>
+    <meta
+      name="description"
+      content="CV online của Đỗ Đăng Tuân — Fullstack Developer với hơn 2 năm kinh nghiệm Vue 3, TypeScript và React; 6 tháng backend .NET Core, PostgreSQL, Doris."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="version" content="1.0.0" />
+    <meta name="build-date" content="2026-10-25" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Đỗ Đăng Tuân — Fullstack Developer" />
+    <meta
+      property="og:description"
+      content="Hơn 2 năm frontend với Vue 3 & TypeScript, 6 tháng backend .NET Core. Lead Frontend cho hệ thống ERP nội bộ GPlay Hub."
+    />
+    <meta property="og:image" content="../assets/og-cover.jpg" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top" aria-label="Đỗ Đăng Tuân — về đầu trang">
+          <span class="brand-copy">
+            <strong>Đỗ Đăng Tuân</strong>
+            <small>Fullstack Developer</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="#about">Giới thiệu</a>
+          <a href="#experience">Kinh nghiệm</a>
+          <a href="#projects">Dự án</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="btn btn-outline btn-sm"
+            href="../assets/Do-Dang-Tuan-CV.pdf"
+            download
+            aria-label="Tải CV PDF"
+          >
+            <span>Tải CV</span>
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 2v8m0 0 3-3m-3 3L5 7M3.5 13h9" />
+            </svg>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span></span><span></span><span></span>
+            <span class="sr-only">Mở menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav" hidden>
+        <a href="#about">Giới thiệu</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#projects">Dự án</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#contact">Liên hệ</a>
+        <a class="mobile-nav-cv" href="../assets/Do-Dang-Tuan-CV.pdf" download
+          >Tải CV PDF</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <div class="hero-grid-lines" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> Hà Nội, Việt Nam · Fullstack
+              Developer
+            </p>
+
+            <h1 class="hero-name">Đỗ Đăng <em>Tuân</em></h1>
+
+            <p class="hero-role">
+              Frontend vững — Backend <mark>thực chiến</mark> — Sản phẩm hoàn
+              thiện.
+            </p>
+
+            <p class="hero-lede">
+              Hơn <strong>2 năm kinh nghiệm</strong> với Vue 3 và TypeScript,
+              cùng 6 tháng làm backend .NET Core, PostgreSQL và Doris. Hiện là
+              Fullstack Developer kiêm Lead Frontend cho hệ thống ERP nội bộ
+              GPlay Hub.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">
+                Xem dự án
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 13 13 3M6 3h7v7" />
+                </svg>
+              </a>
+              <a
+                class="btn btn-line"
+                href="../assets/Do-Dang-Tuan-CV.pdf"
+                download
+              >
+                Tải CV PDF
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8 2v8m0 0 3-3m-3 3L5 7M3.5 13h9" />
+                </svg>
+              </a>
+            </div>
+
+            <ul class="hero-links">
+              <li>
+                <a href="mailto:tuandodang.work@gmail.com">
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <rect x="1.5" y="3" width="13" height="10" rx="2" />
+                    <path d="m2.5 4.5 5.5 4 5.5-4" />
+                  </svg>
+                  tuandodang.work@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+84966135609">
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M3 2.5h3l1 3-1.7 1.2a10 10 0 0 0 4 4L10.5 9l3 1v3a1 1 0 0 1-1.1 1C6.9 13.5 2.5 9.1 2 3.6a1 1 0 0 1 1-1.1Z"
+                    />
+                  </svg>
+                  0966 135 609
+                </a>
+              </li>
+              <li class="hero-links-location">
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8 14.5s5-4.2 5-8a5 5 0 1 0-10 0c0 3.8 5 8 5 8Z" />
+                  <circle cx="8" cy="6.5" r="1.8" />
+                </svg>
+                Triều Khúc, Thanh Trì, Hà Nội
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <img
+                src="../assets/portrait.png"
+                width="660"
+                height="884"
+                alt="Ảnh chân dung Đỗ Đăng Tuân"
+                fetchpriority="high"
+              />
+              <span class="portrait-tag">Fullstack Developer</span>
+              <span class="chip chip-1">Vue 3</span>
+              <span class="chip chip-2">TypeScript</span>
+              <span class="chip chip-3">.NET</span>
+            </div>
+
+            <aside class="hero-note">
+              <p class="hero-note-label">
+                <span class="pulse"></span> Hiện tại
+              </p>
+              <strong>Fullstack Developer @ Global Play Studio</strong>
+              <p>
+                Lead Frontend cho GPlay Hub — ERP nội bộ phục vụ quản lý dự án,
+                nhân sự và dữ liệu quảng cáo.
+              </p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <dl class="stats reveal" aria-label="Các số liệu nổi bật">
+            <div class="stat">
+              <dt>Kinh nghiệm</dt>
+              <dd>
+                <strong data-count="2" data-suffix="+">2+</strong
+                ><span>năm với Vue 3 &amp; TypeScript</span>
+              </dd>
+            </div>
+            <div class="stat">
+              <dt>Dự án</dt>
+              <dd>
+                <strong data-count="4">4</strong
+                ><span>sản phẩm đã triển khai thực tế</span>
+              </dd>
+            </div>
+            <div class="stat">
+              <dt>Vai trò</dt>
+              <dd>
+                <strong>Lead FE</strong
+                ><span>dẫn dắt team 4 người tại GPlay</span>
+              </dd>
+            </div>
+            <div class="stat">
+              <dt>Tiếng Anh</dt>
+              <dd>
+                <strong data-count="780">780</strong
+                ><span>TOEIC · đọc hiểu tài liệu kỹ thuật</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Vue 3</span><span>TypeScript</span><span>React</span
+            ><span>.NET Core</span><span>PostgreSQL</span><span>Doris</span
+            ><span>Clean Architecture</span><span>Tailwind CSS</span>
+            <span>Vue 3</span><span>TypeScript</span><span>React</span
+            ><span>.NET Core</span><span>PostgreSQL</span><span>Doris</span
+            ><span>Clean Architecture</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section" id="about">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="section-kicker"><span>01</span> Giới thiệu</p>
+            <div>
+              <h2>Tư duy sản phẩm,<br />kỹ năng fullstack.</h2>
+              <p class="section-lead">
+                Mình không chỉ code giao diện. Mình làm rõ yêu cầu, thiết kế
+                luồng dữ liệu và hoàn thiện sản phẩm đến khi chạy ổn định trong
+                môi trường thật.
+              </p>
+            </div>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-story reveal">
+              <p>
+                Bắt đầu từ frontend với Vue.js, mình tập trung vào
+                <strong>clean architecture</strong>, quản lý state và tối ưu
+                hiệu năng cho những màn hình nhiều dữ liệu. Sau đó, mình mở rộng
+                sang backend để hiểu trọn vẹn luồng dữ liệu: API, xác thực, cơ
+                sở dữ liệu và triển khai.
+              </p>
+              <p>
+                Ở Global Play Studio, mình dẫn dắt 2 bạn frontend trong team 4
+                người, trực tiếp làm việc với BA để chuyển yêu cầu nghiệp vụ
+                phức tạp thành giao diện dễ dùng. Mình cũng chủ động dùng công
+                cụ AI để tăng tốc, nhưng luôn refactor và chuẩn hoá code trước
+                khi bàn giao.
+              </p>
+
+              <ul class="fact-list">
+                <li><span>Vị trí</span><strong>Fullstack Developer</strong></li>
+                <li>
+                  <span>Kinh nghiệm</span
+                  ><strong>2+ năm frontend · 6 tháng backend</strong>
+                </li>
+                <li>
+                  <span>Học vấn</span
+                  ><strong>PTIT · Công nghệ Đa phương tiện</strong>
+                </li>
+                <li><span>Địa điểm</span><strong>Hà Nội, Việt Nam</strong></li>
+              </ul>
+            </div>
+
+            <div class="about-cards">
+              <article class="about-card reveal">
+                <p class="about-card-index">01 / Frontend</p>
+                <h3>Giao diện nhanh, sạch, dễ mở rộng</h3>
+                <p>
+                  Vue 3, TypeScript và React là bộ công cụ chính. Mình xây UI
+                  theo Figma, quản lý state bằng Pinia/Redux và tối ưu render
+                  cho bảng dữ liệu lớn với AG Grid.
+                </p>
+              </article>
+              <article class="about-card reveal">
+                <p class="about-card-index">02 / Backend</p>
+                <h3>API ổn định, dữ liệu nhất quán</h3>
+                <p>
+                  Thiết kế RESTful API theo Clean Architecture với .NET Core và
+                  ExpressJS; xác thực JWT/Middleware, tối ưu SQL và indexing
+                  trên PostgreSQL, Doris, MongoDB.
+                </p>
+              </article>
+              <article class="about-card reveal">
+                <p class="about-card-index">03 / Cách làm việc</p>
+                <h3>Hiểu nghiệp vụ trước khi viết code</h3>
+                <p>
+                  Làm rõ yêu cầu, chia nhỏ tính năng và ưu tiên khả năng bảo
+                  trì. AI là công cụ tăng tốc, không thay thế tư duy hệ thống và
+                  trách nhiệm với sản phẩm.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <section class="section section-tint" id="experience">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="section-kicker"><span>02</span> Kinh nghiệm</p>
+            <div>
+              <h2>Kinh nghiệm làm việc</h2>
+              <p class="section-lead">
+                Từ phân tích yêu cầu, thiết kế giải pháp đến triển khai và bàn
+                giao — mình tham gia xuyên suốt vòng đời sản phẩm.
+              </p>
+            </div>
+          </header>
+
+          <article class="job reveal">
+            <header class="job-head">
+              <div class="job-identity">
+                <span class="job-logo" aria-hidden="true">GP</span>
+                <div>
+                  <h3>Global Play Studio</h3>
+                  <p>Fullstack Developer · <strong>Lead Frontend</strong></p>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="pill pill-now">04/2024 — Nay</span>
+                <span class="pill">Team 4 người</span>
+              </div>
+            </header>
+
+            <div class="job-body">
+              <div class="job-overview">
+                <p class="job-project">
+                  GPlay Hub — Hệ thống quản trị nội bộ AIO
+                </p>
+                <p class="job-desc">
+                  Nền tảng ERP all-in-one phục vụ quản lý dự án nội bộ, điều
+                  phối nguồn lực và tự động hoá phân tích dữ liệu quảng cáo tập
+                  trung.
+                </p>
+                <ul class="tag-list" aria-label="Công nghệ sử dụng">
+                  <li>Vue 3</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                  <li>AG Grid</li>
+                  <li>.NET Core</li>
+                  <li>PostgreSQL</li>
+                  <li>Doris</li>
+                  <li>gRPC</li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="https://gplayhub.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  gplayhub.com
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 13 13 3M6 3h7v7" />
+                  </svg>
+                </a>
+
+                <figure
+                  class="browser-shot"
+                  aria-label="Ảnh chụp màn hình đăng nhập GPlay Hub"
+                >
+                  <div class="browser-bar" aria-hidden="true">
+                    <i></i><i></i><i></i><span>gplayhub.com</span>
+                  </div>
+                  <img
+                    src="../assets/gplayhub.jpg"
+                    width="1280"
+                    height="820"
+                    loading="lazy"
+                    alt="Màn hình đăng nhập hệ thống GPlay Hub"
+                  />
+                </figure>
+              </div>
+
+              <div class="job-duties">
+                <div class="duty-group">
+                  <h4>
+                    <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="m5 3-4 5 4 5M11 3l4 5-4 5" />
+                    </svg>
+                    Frontend — Lead
+                  </h4>
+                  <ul>
+                    <li>
+                      Dẫn dắt 2 thành viên frontend; phối hợp BA phân tích, làm
+                      rõ yêu cầu và chia nhỏ tính năng theo từng nghiệp vụ.
+                    </li>
+                    <li>
+                      Xây dựng các phân hệ quản lý nhân sự, báo cáo &amp; chi
+                      phí dự án, quản lý công việc, ticket, bug tracking và dữ
+                      liệu quảng cáo (UA).
+                    </li>
+                    <li>
+                      Thiết kế phân quyền theo Role, kiểm soát truy cập
+                      Page/Route và hiển thị chức năng theo vai trò.
+                    </li>
+                    <li>
+                      Hiện thực UI theo Figma; tối ưu bảng dữ liệu lớn với AG
+                      Grid, Element Plus và Tailwind CSS; đề xuất cải tiến
+                      UI/UX.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="duty-group">
+                  <h4>
+                    <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                      <rect x="1.5" y="2.5" width="13" height="11" rx="2" />
+                      <path d="M1.5 6.5h13M5 10h6" />
+                    </svg>
+                    Backend &amp; tích hợp
+                  </h4>
+                  <ul>
+                    <li>
+                      Thiết kế RESTful API theo Clean Architecture với C#
+                      (.NET); xây dựng Data Access Layer, tối ưu SQL query và
+                      indexing để giảm độ trễ.
+                    </li>
+                    <li>
+                      Xây dựng xác thực &amp; phân quyền phía server (JWT,
+                      Middleware), validation đầu vào, logging và xử lý lỗi tập
+                      trung.
+                    </li>
+                    <li>
+                      Làm việc với PostgreSQL, Doris và gRPC; đảm bảo luồng dữ
+                      liệu nhất quán giữa frontend và database.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="subproject reveal">
+              <div class="subproject-media">
+                <img
+                  src="../assets/landing.jpg"
+                  width="1280"
+                  height="889"
+                  loading="lazy"
+                  alt="Trang chủ website Global Play Studio"
+                />
+              </div>
+              <div class="subproject-body">
+                <p class="subproject-meta">GPlay Studio · Landing Page</p>
+                <h3>Website doanh nghiệp hoàn thành trong 1 tuần</h3>
+                <p>
+                  Đảm nhiệm toàn bộ kiến trúc frontend với React, TypeScript và
+                  Vite; tối ưu tốc độ tải, responsive và bàn giao đúng hạn.
+                </p>
+                <ul class="duty-list-compact">
+                  <li>
+                    Dùng AI hỗ trợ sinh giao diện và tối ưu CSS, sau đó refactor
+                    thành hệ thống UI component độc lập theo clean architecture.
+                  </li>
+                  <li>
+                    Phối hợp nội dung, hình ảnh và kiểm thử để sản phẩm sẵn sàng
+                    công bố chỉ sau 7 ngày.
+                  </li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="https://landing-page-demo-blue.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Xem website
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 13 13 3M6 3h7v7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="section" id="projects">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="section-kicker"><span>03</span> Dự án</p>
+            <div>
+              <h2>Dự án nổi bật</h2>
+              <p class="section-lead">
+                Hai sản phẩm mình tham gia từ những ngày đầu: một nền tảng 3D
+                trên web và một hệ sinh thái nghệ thuật số gồm web, admin và
+                browser extension.
+              </p>
+            </div>
+          </header>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <a
+                href="https://test-do-an.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mở demo VExpo"
+              >
+                <img
+                  src="../assets/vexpo.jpg"
+                  width="1280"
+                  height="809"
+                  loading="lazy"
+                  alt="Không gian triển lãm 3D trên nền tảng VExpo"
+                />
+                <span class="project-media-cta"
+                  >Mở demo
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 13 13 3M6 3h7v7" /></svg
+                ></span>
+              </a>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">
+                09/2025 — 12/2025 · Fullstack Developer · Team 3 người
+              </p>
+              <h3>VExpo — Triển lãm 3D trên nền web</h3>
+              <p class="project-desc">
+                Nền tảng cho phép người dùng tự thiết kế, tùy biến và xuất bản
+                không gian triển lãm 3D ngay trên trình duyệt. Mình phụ trách
+                frontend, xây dựng backend API và tích hợp thanh toán.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Phân quyền 4 vai trò Guest / User / Designer / Admin; kiểm
+                  soát route và tách giao diện theo vai trò.
+                </li>
+                <li>
+                  Tối ưu UX cho Designer thao tác công cụ thiết kế và người xem
+                  trải nghiệm không gian 3D trực tiếp.
+                </li>
+                <li>
+                  Xây dựng RESTful API CRUD với Express.js; kết nối máy chủ AI
+                  bên ngoài cho các tác vụ xử lý thông minh.
+                </li>
+                <li>
+                  Tích hợp PayOS, phát triển endpoint quản lý subscription và tự
+                  động hoá luồng giao dịch.
+                </li>
+              </ul>
+              <ul class="tag-list">
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+                <li>Express.js</li>
+                <li>Supabase</li>
+                <li>PayOS</li>
+                <li>Three.js</li>
+                <li>Python</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="btn btn-primary btn-sm"
+                  href="https://test-do-an.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo website</a
+                >
+                <a
+                  class="btn btn-line btn-sm"
+                  href="https://drive.google.com/file/d/1wAc-a4cCOZ9nj1nXMOQ4rdUjirfh0ALI/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Video demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-reverse reveal">
+            <div class="project-media">
+              <a
+                href="https://viet-doodle-gallery.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mở website VietDoodle Gallery"
+              >
+                <img
+                  src="../assets/vietdoodle.jpg"
+                  width="1280"
+                  height="889"
+                  loading="lazy"
+                  alt="Giao diện website VietDoodle Gallery"
+                />
+                <span class="project-media-cta"
+                  >Mở website
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 13 13 3M6 3h7v7" /></svg
+                ></span>
+              </a>
+              <div class="media-stack">
+                <a
+                  href="https://vdgadmin.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Mở trang quản trị VDG Admin"
+                >
+                  <img
+                    src="../assets/vdg-admin.jpg"
+                    width="1280"
+                    height="889"
+                    loading="lazy"
+                    alt="Màn hình đăng nhập trang quản trị VDG Admin"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">
+                02/2024 — 04/2024 · Frontend Developer · Team 3 người
+              </p>
+              <h3>VietDoodle Gallery — Hệ sinh thái nghệ thuật số</h3>
+              <p class="project-desc">
+                Client web, trang quản trị VDG Admin và Browser Extension giúp
+                khám phá, tương tác và kiểm duyệt tác phẩm nghệ thuật số. Mình
+                chủ trì kiến trúc và phát triển phần quản trị.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Chủ trì kiến trúc và phát triển VDG Admin bằng Vue.js +
+                  Tailwind CSS, tối ưu luồng thao tác quản trị.
+                </li>
+                <li>
+                  Xây dựng CRUD kiểm duyệt tác phẩm, quản lý người dùng, phân
+                  quyền và giám sát trạng thái hệ thống.
+                </li>
+                <li>
+                  Tích hợp RESTful API Express.js / MongoDB, xác thực JWT, data
+                  table và bộ lọc tìm kiếm nâng cao.
+                </li>
+                <li>
+                  Tối ưu render danh sách, lazy loading ảnh và quản lý state tập
+                  trung cho bảng điều khiển mượt mà.
+                </li>
+              </ul>
+              <ul class="tag-list">
+                <li>Vue.js</li>
+                <li>React.js</li>
+                <li>Tailwind CSS</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  class="btn btn-primary btn-sm"
+                  href="https://viet-doodle-gallery.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Client web</a
+                >
+                <a
+                  class="btn btn-line btn-sm"
+                  href="https://vdgadmin.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >VDG Admin</a
+                >
+                <a
+                  class="btn btn-line btn-sm"
+                  href="https://chromewebstore.google.com/detail/vietdoodle-gallery/kallkjgnjobgebgdlmdffihffoiibajf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Extension</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="section section-dark" id="skills">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="section-kicker"><span>04</span> Kỹ năng</p>
+            <div>
+              <h2>Kỹ năng &amp; công cụ</h2>
+              <p class="section-lead">
+                Bộ kỹ năng được sử dụng trực tiếp trong các dự án thực tế, từ
+                dựng UI đến tối ưu truy vấn và triển khai.
+              </p>
+            </div>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-group reveal">
+              <h3><span>01</span> Ngôn ngữ</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>HTML/CSS</li>
+                <li>C#</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <h3><span>02</span> Frontend</h3>
+              <ul>
+                <li>Vue 3</li>
+                <li>Composition API</li>
+                <li>Pinia</li>
+                <li>Vue Router</li>
+                <li>Vite</li>
+                <li>React</li>
+                <li>React Router</li>
+                <li>Redux</li>
+                <li>Tailwind CSS</li>
+                <li>Element Plus</li>
+                <li>Ant Design</li>
+                <li>AG Grid / Chart</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <h3><span>03</span> Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>ExpressJS</li>
+                <li>NestJS</li>
+                <li>ASP.NET Core</li>
+                <li>RESTful API</li>
+                <li>gRPC</li>
+                <li>JWT</li>
+                <li>Middleware</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <h3><span>04</span> Dữ liệu</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Supabase</li>
+                <li>Doris</li>
+                <li>SQL optimization</li>
+                <li>Indexing</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <h3><span>05</span> Kiến trúc &amp; hiệu năng</h3>
+              <ul>
+                <li>OOP</li>
+                <li>SOLID</li>
+                <li>Clean Architecture</li>
+                <li>State Management</li>
+                <li>Lazy loading</li>
+                <li>Code splitting</li>
+                <li>Tree shaking</li>
+                <li>Minify / Compress</li>
+              </ul>
+            </article>
+            <article class="skill-group reveal">
+              <h3><span>06</span> Real-time &amp; công cụ</h3>
+              <ul>
+                <li>WebSocket</li>
+                <li>Server-Sent Events</li>
+                <li>Swagger</li>
+                <li>Postman</li>
+                <li>PayOS</li>
+                <li>Git / GitHub</li>
+                <li>SmartGit</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="ai-tools reveal">
+            <p>Công cụ AI hỗ trợ phát triển</p>
+            <ul>
+              <li>ChatGPT / Codex</li>
+              <li>Antigravity</li>
+              <li>Claude Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION ================= -->
+      <section class="section section-tint" id="education">
+        <div class="wrap">
+          <header class="section-head reveal">
+            <p class="section-kicker"><span>05</span> Background</p>
+            <div>
+              <h2>Học vấn &amp; hoạt động</h2>
+              <p class="section-lead">
+                Nền tảng công nghệ đa phương tiện cùng các hoạt động cộng đồng
+                giúp mình làm tốt cả phần kỹ thuật lẫn giao tiếp, tổ chức.
+              </p>
+            </div>
+          </header>
+
+          <div class="background-grid">
+            <article class="background-card background-card-wide reveal">
+              <p class="background-label">2021 — 2026</p>
+              <h3>Học viện Công nghệ Bưu chính Viễn thông (PTIT)</h3>
+              <p class="background-sub">
+                Chuyên ngành Phát triển ứng dụng — Ngành Công nghệ Đa phương
+                tiện
+              </p>
+              <p class="background-meta">Bằng Khá</p>
+            </article>
+
+            <article class="background-card reveal">
+              <p class="background-label">Chứng chỉ · 2025</p>
+              <h3>TOEIC 780</h3>
+              <p>
+                Có thể đọc hiểu tài liệu kỹ thuật, trao đổi công việc và làm
+                việc với tài liệu tiếng Anh.
+              </p>
+            </article>
+
+            <article class="background-card reveal">
+              <p class="background-label">Giải thưởng · 2024</p>
+              <h3>Giải Ba — VietFuture</h3>
+              <p>
+                Cuộc thi khởi nghiệp VietFuture với ý tưởng/sản phẩm công nghệ.
+              </p>
+            </article>
+
+            <article class="background-card background-card-wide reveal">
+              <p class="background-label">2022 — 2023 · CLB IT PTIT</p>
+              <h3>Phó ban truyền thông</h3>
+              <p>
+                Quản lý hoạt động truyền thông và định hướng nội dung, hình ảnh
+                nhận diện cho CLB. Thiết kế banner, poster và đồng tổ chức các
+                sự kiện, cuộc thi lập trình cho sinh viên IT.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <div class="contact-head reveal">
+            <p class="section-kicker section-kicker-light">
+              <span>06</span> Liên hệ
+            </p>
+            <h2>Cùng xây dựng<br />sản phẩm tiếp theo.</h2>
+            <p>
+              Nếu bạn muốn trao đổi về cơ hội hợp tác hoặc một sản phẩm sắp tới,
+              hãy gửi email cho mình.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a
+              class="contact-card contact-card-main reveal"
+              href="mailto:tuandodang.work@gmail.com"
+            >
+              <span class="contact-card-label">Email</span>
+              <strong>tuandodang.work@gmail.com</strong>
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 13 13 3M6 3h7v7" />
+              </svg>
+            </a>
+            <a class="contact-card reveal" href="tel:+84966135609">
+              <span class="contact-card-label">Điện thoại</span>
+              <strong>0966 135 609</strong>
+            </a>
+            <div class="contact-card reveal">
+              <span class="contact-card-label">Địa điểm</span>
+              <strong>Triều Khúc, Thanh Trì, Hà Nội</strong>
+            </div>
+            <a
+              class="contact-card reveal"
+              href="../assets/Do-Dang-Tuan-CV.pdf"
+              download
+            >
+              <span class="contact-card-label">CV</span>
+              <strong>Tải bản PDF</strong>
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M8 2v8m0 0 3-3m-3 3L5 7M3.5 13h9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© 2026 Đỗ Đăng Tuân.</p>
+        <p class="footer-meta">
+          <a href="#top">Về đầu trang ↑</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
